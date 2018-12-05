@@ -8,8 +8,39 @@ class Error(Exception):
 class InputNotValid(Error):
    pass
 
+
+
 def LinearLogic():
    print("You chose linear")
+   print("For the equation in the form y = mx + b")
+   while True:
+       try:
+           userAandMchoice = float(input("Enter the 'm' value: "))
+           break
+       except ValueError:
+           print("Not a valid input")
+   while True:
+       try:
+           userBchoice = float(input("Enter the 'b' value: "))
+           break
+       except ValueError:
+           print("Not a valid input")
+   print("{:>10}{:>20}".format("X Value", "Y Value"))
+   for iteration in range(-5, 6):
+       print("{:>10}{:>20}".format(iteration, userAandMchoice * iteration + userBchoice))
+   while True:
+       try:
+           userquit = input("Would you like to continue? (Y/N)")
+           if userquit.upper() == "N":
+               print("Goodbye")
+               quit()
+           if userquit.upper() == "Y":
+               print("-"*25)
+               break
+           else:
+               raise InputNotValid
+       except InputNotValid:
+           print("Not a valid input. Please enter 'Y' for yes and 'N' to quit")
 
 def QuadraticLogic():
    print("You chose quadratic")
@@ -41,6 +72,19 @@ def QuadraticLogic():
    print("{:>10}{:>20}".format("X Value", "Y Value"))
    for xValue in QuadraticList:
        print("{:>10}{:>20}".format(xValue, userAandMchoice*(xValue**2) + userBchoice*xValue + userCchoice))
+   while True:
+       try:
+           userquit = input("Would you like to continue? (Y/N)")
+           if userquit.upper() == "N":
+               print("Goodbye")
+               quit()
+           if userquit.upper() == "Y":
+               print("-"*25)
+               break
+           else:
+               raise InputNotValid
+       except InputNotValid:
+           print("Not a valid input. Please enter 'Y' for yes and 'N' to quit")
 
 while True:
    print("Which relationship would you like to graph?")
