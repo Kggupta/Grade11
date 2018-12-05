@@ -7,6 +7,8 @@ class InputNotPositive(Error):
    pass
 class InputIs1(Error):
    pass
+class InputNotInteger(Error):
+   pass
 
 def userQuits():
    print("quit")
@@ -32,11 +34,15 @@ while True:
            raise InputIs1
        elif UserInputNumber == 0:
            userQuits()
+       elif UserInputNumber.is_integer == False:
+           raise InputNotInteger
        else:
-           CalculateIfPrime(UserInputNumber)
-   except TypeError:
+           CalculateIfPrime(int(UserInputNumber))
+   except InputNotInteger:
        print("That is not an integer!")
    except InputNotPositive:
        print("Enter a POSITIVE integer!")
    except InputIs1:
        print("1 is neither prime nor composite!")
+   except ValueError:
+       print("That is not a number!")
