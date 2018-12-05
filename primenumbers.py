@@ -1,4 +1,15 @@
+#My python program to check if a user inputted number is prime or not
+#it will then tell you how many prime numbers you entered
 PrimeNumberList = []
+class Error(Exception):
+   pass
+class InputNotPositive(Error):
+   pass
+class InputIs1(Error):
+   pass
+
+def userQuits():
+   print("quit")
 
 def CalculateIfPrime(UserValue):
    if UserValue > 1:
@@ -11,6 +22,21 @@ def CalculateIfPrime(UserValue):
            print("That IS prime")
            PrimeNumberList.append(UserValue)
 
+print("Type 0 to quit.")
 while True:
-   UserInputNumber = int(input("Enter a positive integer value: "))
-   CalculateIfPrime(UserInputNumber)
+   try:
+       UserInputNumber = int(input("Enter a positive integer value: "))
+       if UserInputNumber < 0:
+           raise InputNotPositive
+       elif UserInputNumber == 1:
+           raise InputIs1
+       elif UserInputNumber == 0:
+           userQuits()
+       else:
+           CalculateIfPrime(UserInputNumber)
+   except TypeError:
+       print("That is not an integer!")
+   except InputNotPositive:
+       print("Enter a POSITIVE integer!")
+   except InputIs1:
+       print("1 is neither prime nor composite!")
