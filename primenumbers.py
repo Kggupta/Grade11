@@ -11,7 +11,7 @@ class InputNotInteger(Error):
    pass
 
 def userQuits():
-   print("quit")
+   print("You Entered {} prime numbers".format(len(PrimeNumberList)))
 
 def CalculateIfPrime(UserValue):
    if UserValue > 1:
@@ -27,7 +27,7 @@ def CalculateIfPrime(UserValue):
 print("Type 0 to quit.")
 while True:
    try:
-       UserInputNumber = int(input("Enter a positive integer value: "))
+       UserInputNumber = float(input("Enter a positive integer value: "))
        if UserInputNumber < 0:
            raise InputNotPositive
        elif UserInputNumber == 1:
