@@ -1,0 +1,254 @@
+<!-
+syntax page
+-!>
+
+<html><!-START OF HTML-!>
+    
+    <!-//////////////////////////////////////////////////////////START OF HEADER////////////////////////////////////////////////////////-!>
+    
+    <div class="banner" style="padding:10px; text-align:center; background-color: black; color: white;"><!-START OF BANNER CODE-!>
+        <div class="banner-content"><!- create the main banner, the built in class called "banner-content" does this for me-!>
+            <h1><!- main header for telling the visitor what page they are on as well as giving a set of images that they can click to go to the other pages-!>
+                <marquee align="top" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><!-marquee that will stop when the mouse hovers over it-!>
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-all swift logos return the user to the homepage-!>
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50"><!-referencing the swift logo in the file-!>
+                    </a>
+                    Swift Basics: A tutorial by Keshav<!- the text of the marquee-!>
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-another swift logo that goes back to the homepage-!>
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50">
+                    </a>
+                </marquee><!-end of marquee-!>
+                <a href="syntaxpage.html"><!-anchor that references to the syntax page-!>
+                    <img src="syntaxbttn.png" align="left" alt="Syntax Page" width="100" height="100" style="margin-left: 10%"><!-the image that will act as a button-!>
+                </a>
+                <a href="faqpage.html"><!-anchor that references to the faq page-!>
+                    <img src="faqbttn%20(1).png" align="right" alt="FAQ Page" width="100" height="100" style="margin-right: 10%">
+                </a>
+                <a href="briefhistpage.html"><!-anchor that references to the breif hist page-!>
+                    <img src="briefhistorybttn.png" align="right" alt="Brief History Page" width="100" height="100" style="margin-right: 10%">
+                </a>
+                <a href="tipsandtrickspage.html"><!-anchor that references to the tips and tricks page-!>
+                    <img src="tandtricksbttn%20(1).png" align="left" alt="Tips and Tricks" width="100" height="100" style="margin-left: 10%">
+                </a>
+            </h1>
+            <font face="Helvetica" style="color: white; font-size: 20px">
+                Syntax:
+            </font>
+            <h3>
+                How to use the language!
+            </h3><!- header that tells user what page they are on-!>
+            Clicking any swift logo will return you to the homepage. <!-there is no dedicated button in the menu to go back to the homepage so all the swift logos do that instead this message tells this to the user so that they wont be lost-!>
+            <br>
+        </div>
+    </div><!-END OF BANNER CODE-!>
+    
+    <!-/////////////////////////////////////////////////////////START OF BODY/////////////////////////////////////-!>
+    
+    <body bgcolor="gray"><!-START OF BODY CODE-!>
+        <strong style="font-size: 30; color: white">
+            Synopsis
+        </strong><!-main title of section-!>
+        <hr>
+        <a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html" title="Official Swift 4 documentation"><!-image that references an outside link(official documentation), as required by the assignment-!>
+            <img src="syntaximgintro.png" style="padding: 0 15px; float: right;"><!-reference to the image in file-!>
+        </a>
+        <font style="color: white; font-size: 20px; align-content: center">
+            While using Swift 4 it can be handy to have a page with all the proper application of the syntax for the language. This page will have a rundown of all the most important commands in Swift 4 and how to use them. If you would like to read into the subject, simply click the image to the right and you will be redirected to the official Apple documentation.
+        </font><!-text for introducing the topic and giving info on how to get more information-!>
+        <br>
+        <ol align="left" style="font-size: 20px; color: white"><!- ordered list for everything that will be covered in the page-!>
+            <li>
+                <strong>Variables</strong>
+            </li>
+            <li>
+                <strong>Functions</strong>
+            </li>
+            <li>
+                <strong>Control Flow</strong>
+            </li>
+            <li>
+                <strong>Loops</strong>
+            </li>
+            <li>
+                <strong>Arrays</strong>
+            </li>
+        </ol><!-END OF ORDERED LIST-!>
+        <br>
+        <strong style="font-size: 30px; color: white">
+            Variables
+        </strong><!-header to introduce the variables section-!>
+        <hr><!-horizontal line separator-!>
+        <br>
+        <font style="font-size: 20px; color: white"> <!-text that explains what a variable is. sections of the text are colored purple, because that is what it would look like in the IDE-!>           
+            Use <code style="color: purple">var</code> for variables that can change which is known as mutable and <code style="color: purple">let</code> for constants that can't change, this is non-mutable.
+        </font>
+            <br>
+            <style> 
+                table,th,td{
+                    border: 1px solid;
+                }
+            </style>
+        <!- for setting the style of the table below^^^^-!>
+            <table align = "center" style="color: white; font-size: 20px;"><!-START OF TABLE THAT HAS ALL THE VARIABLE TYPES-!>
+                <tr align = "center">
+                    <td><!-code for the int variable-!>
+                        <code style="color: purple">var</code> <code style="color: black">varIntName:</code> <code style="color: purple">Int</code> <code style="color: black"> = </code> <code style="color: #ffdb3d">7</code>
+                    </td>
+                    <td><!-explanation-!>
+                        Integers are "whole" numbers, numbers without a fractional component. Setting a Integer as a fraction would crash your program. This is usefull for saving space when you know a variable will never hold a number that is not "whole"
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td><!-code for the float variable-!>
+                        <code style="color: purple">var</code> <code style="color: black">varFloatName:</code> <code style="color: purple">Float</code> <code style="color: black"> = </code> <code style="color: #ffdb3d">1.987</code>
+                    </td>
+                    <td><!-explanation-!>
+                        Floats are decimal-point numbers, therefore are numbers with a fractional component. They're single precision, with as little as 6 decimal digits.
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><!-code for the double variable-!>
+                        <code style="color: purple">let</code> <code style="color: black">constDoubleName:</code> <code style="color: purple">Double</code> <code style="color: black"> = </code> <code style="color: #ffdb3d">21.6598301459</code>
+                    </td>
+                    <td><!-explanation-!>
+                        Doubles are floating point numbers with double the precision, they have a fraction component to them. In addition, doubles are preferred over floats when used in application.
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><!-code for string variable-!>
+                        <code style="color: purple">var</code> <code style="color: black">varStringName:</code> <code style="color: purple">String</code> <code style="color: black"> = </code> <code style="color: #ffdb3d">"Hello World"</code>
+                    </td>
+                    <td><!-explanation-!>
+                        A String is a sequence of characters, such as text. Keep in mind that strings can also carry numbers just like any of the variable types above, BUT they cannot do opperations without special steps beforehand.
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><!-code for the bool variable-!>
+                        <code style="color: purple">var</code> <code style="color: black">varBoolName:</code> <code style="color: purple">Bool</code> <code style="color: black"> = </code> <code style="color: purple">false</code>
+                    </td>
+                    <td><!-explanation-!>
+                        Booleans are used for logical operations. A boolean can be either true or false.
+                    </td>
+                </tr>
+                <tr>
+                    <td><!-code for the infered type variable-!>
+                        <code style="color: purple">var</code> <code style="color: black">varName</code> <code style="color: black"> = </code> <code style="color: #ffdb3d">"This is an example of using Swift's type inference capabilities"</code>
+                    </td>
+                    <td><!-explanation-!>
+                        Swift can infer the type of variable that is being applied to it (<code style="color: purple">Int</code>, <code style="color: purple">Double</code>, <code style="color: purple">Float</code>, <code style="color: purple">String</code>, Etc). In this case <code style="color: black">varName</code> is being infered as a <code style="color: purple">String</code>
+                    </td>
+                </tr>
+            </table><!-END OF TABLE FOR EXPLAINING ALL VARIABLE TYPES-!>
+        <br>
+        <br>
+        <strong style="font-size: 30px; color: white">
+            Functions
+        </strong><!-new section into functions-!>
+        <hr>
+        <br>
+        <font style="color: white; font-size: 20px"><!-explanation-!>
+            Functions are used as 'containers' in Swift code. It has an input (parameters/objects) and outputs (returns). Functions are usually to create abstractions in code, so that the snippet inside the funtion becomes reusable. Below is an example of how a function is setup.
+        </font>
+        <br>
+        <pre style="font-size: 20px; color: white"><!-USING THE PRE TAG TO FORCE FORMAT THE SECTION OF CODE-!>
+            <code style="color: purple">func</code> <code style="color: black">funcName</code> <code style="color: black">(</code><code style="color: black">var1:</code> <code style="color: purple">String</code><code style="color: black">,</code> <code style="color: black">var2:</code><code style="color: purple">String</code><code style="color: black">)</code> <code style="color: black">-></code> <code style="color: purple">String</code>
+                <code style="color: black">{</code>
+                    <code style="color: purple">return</code> <code style="color: #ffdb3d">"\(var1), \(var2)"</code>
+                <code style="color: black">}</code>
+        </pre><!-END OF PRE THAT SHOWS THE SYNTAX OF A FUNCTION-!>
+        <font style="color: white; font-size: 20px"><!-explanation-!>
+            The reason why functions are so great is that once you code them, you can call them as many times as you want after! (amazing way to save time) 
+        </font>
+        <br>
+        <br>
+        <strong style="font-size: 30px; color: white">Control Flow</strong><!-section into control flow + end of functions section-!>
+        <hr>
+        <font style="font-size: 20px; color: white"><!-what is a if statement-!>
+            Below is an if-statement, or conditional. You use them to make decisions based on logic.
+        </font>
+        <pre style="font-size: 20px; color: white"><!-PRE THAT GIVES THE SYNTAX OF AN IF STATEMENT-!>
+            <code style="color: purple">if</code> <code style="color: black">var1</code> <code style="color: blue"> == </code> <code style="color: black">var2</code>
+                <code style="color: black">{</code>
+                    <code style="color: blue">print</code><code style="color: black">(</code><code style="color: #ffdb3d">"The condition was true"</code><code style="color: black">)</code>
+                <code style="color: black">}</code> <code style="color: purple">else</code> <code style="color: black">{</code>
+                    <code style="color: blue">print</code><code style="color: black">(</code><code style="color: #ffdb3d">"The condition was not true"</code><code style="color: black">)</code>
+                <code style="color: black">}</code>
+        </pre><!-END OF PRE THAT GIVES SYNTAX OF IF STATEMENT-!>
+        <font style="color: white; font-size: 20px"> <!-special explanation of other operators-!>
+            There are numerous types of 'operands' such as the &gt;, &lt;, !, and &amp; symbols
+        </font>
+        <br>
+        <br>
+        <strong style="font-size: 30px; color: white">
+            Loops
+        </strong><!- start of LOOPS section-!>
+        <hr>
+        <font style="font-size: 20px; color: white"><!-What is a loop-!>
+            Loops are used to repeat the same code in the defined parenthesis for any amount of iterations
+        </font>
+        <pre style="font-size: 20px; color: white"><!-code that gives the format of a for loop-!>
+            <code style="color: purple">for</code> <code style="color: black">i</code> <code style="color: blue">in</code> <code style="color: black">1</code><code style="color: blue">...</code><code style="color: black">5</code> 
+                <code style="color: black">{</code>
+                    <code style="color: blue">print</code><code style="color: black">(i)</code>
+                <code style="color: black">}</code>
+        </pre>
+        <font style="font-size: 20px; color: white"><!-explanation + extra info-!>
+            The code above would print 1 to 5 (including 5). You can also use the less that symbol before the second variable like this: <code style="color: black">a</code><code style="color: blue">..</code> <code style="color: black">&lt;b</code> to loop from a to b while not including b.
+        </font>
+        <pre style="color: white; font-size: 20px"><!-code for the syntax of a while loop-!>
+            <code style="color: purple">while</code> <code style="color: black">b</code> <code style="color: blue">&lt;=</code> <code style="color: black">60</code> <code style="color: blue">&amp;&amp; </code><code style="color: black">b</code> <code style="color: blue">&gt;</code> <code style="color: black">0</code>
+                <code style="color: black">{</code>
+                    <code style="color: blue">print</code><code style="color: black">(b)</code>
+                    <code style="color: black">b</code> <code style="color: blue">-= </code><code style="color: black">1</code>
+                <code style="color: black">}</code>
+        </pre>
+        <font style="color: white; font-size: 20px"><!-explanation-!>
+            In addition a <code style="color: purple">while</code> loop can be used when the exact number of iterations is unknown. Above is an example of this.
+        </font>
+        <br>
+        <br>
+        <strong style="font-size: 30px; color: white">
+            Arrays
+        </strong><!-start of array section-!>
+        <hr>
+        <font style="color: white;font-size: 20px"><!-what is an array-!>
+            Arrays are a collection type. It is a type of special variable that can hold multiple values known as cells and cells always contain elements of the same type.
+        </font>
+        <pre style="color: white; font-size: 20px"><!-code for the syntax of an array-!>
+            <code style="color: purple">var</code> <code style="color: black">arrayName = [</code><code style="color: #ffdb3d">"Cell0", "Cell1", "Cell2", "Cell3"</code><code style="color: black">]</code>
+        </pre>
+        <font style="color: white;font-size: 20px">Items can be added to the array:</font><!-how to add items to array-!>
+        <pre style="font-size: 20px"><!-SYNTAX-!>
+            arrayName <code style="color: blue">+=</code> [<code style="color: #ffdb3d">"Cell4"</code>]
+        </pre>
+        <font style="color: white; font-size: 20px"><!-how to get contents of cell-!>
+            And finally you can get the contents of a cell using subscript syntax.
+        </font>
+        <pre style="font-size: 20px"><!-SYNTAX-!>
+            <code style="color: purple">let</code> Cell5 <code style="color: blue">=</code> arrayName[<code style="color: blue">4</code>]
+        </pre>
+        <font style="color: white;font-size: 20px"><!-explanation-!>
+            Keep in mind that arrays are 'zero-index', so the number of the first cell is 0 NOT 1.
+        </font>
+        <br>
+        <hr>
+    </body>
+    
+    <!-////////////////////////////////////////////START OF FOOTER//////////////////////////////////////////////-!>
+    
+    <div class="footer" style="padding:10px; text-align:center; background-color: black; color: white;"><!-START OF FOOTER-!>
+        <div class="footer-content"><!-using predefined footer class-!>
+            <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-swift logo-!>
+                <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50">
+            </a>
+            <br>
+            <a id="back2Top" title="Back to top" href="#"><!-IMAGE TO RETURN TO TOP OF PAGE-!>
+                <img src="returntotop.png" align="center" alt="Return to top" width="100" height="50">
+            </a>
+            <br>
+            <font style="font-size: 15">
+                Webpage designed by: Keshav Gupta, Class: ICS3U, Teacher: Mr.Dhaliwal, Date created: 9/20/2018.<!-extra info-!>
+            </font>
+        </div>
+    </div>
+</html><!-END OF HTML-!>

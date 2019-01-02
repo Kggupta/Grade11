@@ -1,0 +1,126 @@
+<!-HOMEPAGE-!>
+
+<!-
+    Name:Keshav
+    Class:ICS3U
+    Date created:9/20/2018
+    Date finished:9/23/2018
+    Date due:9/25/2018
+    Date handed-in:9/25/2018
+-!>
+<html><!-START OF HTML-!>
+    
+    <!-////////////////////////////////////////////////START OF HEADER////////////////////////////////////////////////-!>
+    
+    <div class="banner" style="padding:10px; text-align:center; background-color: grey; color: white;"><!-declaring everything in the div to be part of the header + aligned center + background of grey + white text-!>
+        <div class="banner-content"><!-using predefined banner class-!>
+            <h1><!-MAIN HEADER-!>
+                <marquee align="top" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><!-MARQUEE FOR HEADER WILL STOP WHEN MOUSE HOVERS OVER IT-!>
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-anchor swift logo to the homepage-!>
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50"><!-reference to swift logo-!>
+                    </a><!-end of anchor to homepage-!>
+                     Swift Basics: A tutorial by Keshav <!-TEXT FOR MARQUEE-!>
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-anchor swift logo to homepage-!>
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50"><!-reference to swift logo-!>
+                    </a><!-end of anchor to homepage-!>
+                </marquee><!-END OF MARQUEE FOR HEADER-!>
+                <a href="syntaxpage.html" style="margin: 100px;"><!-anchor to syntax page-!>
+                    <img src="syntaxbttn.png" align="left" alt="Syntax Page" width="100" height="100" style="margin-left: 10%"><!-reference to syntax button that i made in paint-!>
+                </a><!-end of anchor to syntax page-!>
+                <a href="faqpage.html"><!-anchor to faq page_!>
+                    <img src="faqbttn%20(1).png" align="right" alt="FAQ Page" width="100" height="100" style="margin-right: 10%"><!-reference to faq button made in paint-!>
+                </a><!-end of anchor to faq page-!>
+                <a href="briefhistpage.html"><!-anchor to brief hist page-!>
+                    <img src="briefhistorybttn.png" align="right" alt="Brief History Page" width="100" height="100" style="margin-right: 10%"><!-reference to brief history button-!>
+                </a><!-end of anchor to brief history page-!>
+                <a href="tipsandtrickspage.html"><!-anchor to tips and tricks page-!>
+                    <img src="tandtricksbttn%20(1).png" align="left" alt="Tips and Tricks" width="100" height="100" style="margin-left:10%"><!-reference to t and tricks button-!>
+                </a><!-END OF IMAGES AND ANCHORS TO OTHER PAGES-!>
+            </h1><!-END OF MAIN HEADER-!>
+            <font face="Helvetica" style="color: white; font-size: 20px">
+                Homepage:
+            </font><!-header that tells that the page is for-!>
+            <h3>
+                The headquarters of everything SWIFT!
+            </h3><!-short description of page-!>
+            Clicking any swift logo will return you to the homepage. <!-info to tell user that swift logos are the link to the homepage as there is no dedicated button for it-!>
+            <br>
+        </div>
+    </div><!-END OF DIV HEADER CLASS-!>
+    
+    
+    <!-//////////////////////////////////////////////////////////////START OF BODY//////////////////////////////////////////////////-!>
+    
+    
+    <body bgcolor="black" style="color: white; text-align: center;"><!-START OF BODY-!>
+        <br>
+        <strong style="font-size: 30">
+            Overview
+        </strong><!-OVERVIEW OF WHAT IS GOING ON IN PAGE-!>
+        <hr>
+        <p>
+            <img src="swiftoverview.jpg" style="padding: 0 15px; float: right;">
+        </p><!-image on the right of page that says swift overview-!>
+        <p style="font-size: 20; margin-top: 20px;">
+            Swift is a new programming language created by Apple which is in the C family of coding languages. It is a language that is very lightweight and fast with a simpler and stronger structure than many other mainstream languages. This language is used primarily for macOS, iOS, watchOS and tvOS. In my personal experience it is interactive and fun with a simple syntax and an excelent error detection compiler.
+        </p><!-main overview text-!>
+        <p style="font-size: 20">
+            Before Swift 4 there was of course Swift 3, so before we start it is important to know what is new in the most recently released version. Below is a list of the main changes from Swift 3 to 4.
+        </p><!-TRANSITION TO MAIN-!>     
+    </body>
+    <ul type = "square" align="left" style="font-size: 20; color: white"><!-UNORDERED LIST OF HOW SWIFT 4 IS DIFFERENT FROM SWIFT 3-!>
+        <li><!-first component-!>
+            <strong>
+                Refreshed String Manifesto
+            </strong><!-first point-!>
+            <p>
+                In version 4, the string type conforms to the ‘Collection’ protocol. This way the programmer can just enumerate over a string to get all characters.
+            </p><!-explanation of first point-!>
+        </li><!-end of first component-!>
+        <br>
+        <li><!-second component-!>
+            <strong>
+                Enhanced File Paths
+            </strong><!-second point-!>
+            <p>
+                Swift 3 had the new addition of File Paths, but their usage was limited, and did not work well when using structs. In Swift 4 a program can find the file path of a referenced object without the input of the user, thus saving time becuase you dont need to copy in the FULL file path.
+            </p><!-explanation of second point-!>
+        </li><!-end of second component-!>
+        <br>
+        <li><!-third component-!>
+            <strong>
+                Generic Subscripts
+            </strong><!-third point-!>
+            <p>
+                In other versions of Swift, the developer had to define the type of value to be returned in a funtion. Instead, with Swift the system will infer what the function can return in any iteration and decide the variable type on its own.
+            </p><!-explanation of third point-!>
+        </li><!-end of third component-!>
+        <br>
+        <li><!-fourth component-!>
+            <strong>
+                Better Variable Declaration System
+            </strong><!-fourth point-!>
+            <p>
+                In most programs variables must always be declared BEFORE they are used. In Swift 4 a new system was introduced where a variable can be declared anywhere in the code and the compiler will still recognise the use of it without needing it to be at the very top of the program. It has also introduces a feature where the type of the variable need not be stated in the declaration as it is decided by the software as the code is run
+            </p><!-explanation of fourth point-!>
+        </li><!-end of fourth component-!>
+    </ul><!-END OF UNORDERED LIST-!>
+    
+    <!-////////////////////////////////////////////////START OF FOOTER/////////////////////////////////////////////////-!>
+    
+    <div class="footer" style="padding:10px; text-align:center; background-color: grey; color: white;"><!-this div will now all be part of the footer class i.e its constrained to the bottom of the page with 10px padding, text aligned to center, grey background and white text-!>
+        <div class="footer-content"><!-assigning footer content-!>
+            <a href="AssignmentCodeKeshav.html" title="Return to Homepage"><!-anchor reference to home page with swift logo image-!>
+                <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50"><!-reference to swift logo image-!>
+            </a><!-end of anchor to homepage-!>
+            <br>
+            <a id="back2Top" title="Back to top" href="#"><!-anchor to go to the top of the page-!>
+                <img src="returntotop.png" align="center" alt="Return to top" width="100" height="50"><!-reference to the return to top image-!>
+            </a><!-end of anchor to the top of page-!>
+            <br>
+            <font style="font-size: 15"><!-end note for more info on the assignment-!>
+                Webpage designed by: Keshav Gupta, Class: ICS3U, Teacher: Mr.Dhaliwal, Date created: 9/20/2018.<!-more info-!>
+            </font><!-end of end note-!>
+        </div><!-end of footer content div-!>
+    </div><!-END OF FOOTER-!>
+</html><!-END OF HTML-!>

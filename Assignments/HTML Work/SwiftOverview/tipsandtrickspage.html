@@ -1,0 +1,136 @@
+<!-
+tips and tricks page
+-!>
+
+<html><!-START OF HTML-!>
+    
+    <!-/////////////////////////////////////////////////////////////START OF HEADER//////////////////////////////////-!>
+    
+    <div class="banner" style="padding:10px; text-align:center; background-color: black; color: white;"><!-START OF MAIN BANNER. SEE HOMEPAGE DOC FOR MORE INFO-!>
+        <div class="banner-content">
+            <h1>
+                <marquee align="top" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage">
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50">
+                    </a>
+                    Swift Basics: A tutorial by Keshav
+                    <a href="AssignmentCodeKeshav.html" title="Return to Homepage">
+                        <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50">
+                    </a>
+                </marquee>
+                <a href="syntaxpage.html">
+                    <img src="syntaxbttn.png" align="left" alt="Syntax Page" width="100" height="100" style="margin-left: 10%">
+                </a>
+                <a href="faqpage.html">
+                    <img src="faqbttn%20(1).png" align="right" alt="FAQ Page" width="100" height="100" style="margin-right: 10%">
+                </a>
+                <a href="briefhistpage.html">
+                    <img src="briefhistorybttn.png" align="right" alt="Brief History Page" width="100" height="100" style="margin-right: 10%">
+                </a>
+                <a href="tipsandtrickspage.html">
+                    <img src="tandtricksbttn%20(1).png" align="left" alt="Tips and Tricks" width="100" height="100" style="margin-left: 10%">
+                </a>
+            </h1>
+            <font face="Helvetica" style="color: white; font-size: 20px">
+                Tips and Tricks:
+            </font>
+            <h3>
+                How to program like a professional!
+            </h3>
+            Clicking any swift logo will return you to the homepage. 
+            <br>
+        </div>
+    </div><!-END OF MAIN BANNER, MORE COMMENTS TO TELL HOW IT WORKS IN HOMEPAGE FILE-!>
+    
+    <!-///////////////////////////////////////////////////////////START OF BODY///////////////////////////////////////////////-!>
+    
+    <body bgcolor="#47494c"><!-DECLARING BODY COLOR. ALL BACKGROUNDS GET SLIGHTLY DARKER FROM LEFT TO RIGHT TO GIVE A COOLER ATMOSPHERE-!>
+        <ol style="color: white;font-size: 20px"><!-ordered list of all the tips and tricks-!>
+            <li>
+                <font><!-TIP 1-!>
+                    Keep track of your build time when compiling your Swift code. A sudden spike in build time could mean your code needs to be revized and made smaller! Try to keep your build time less than 5 seconds
+                </font>
+                <br>
+                <p style="text-align:center;"><!-image-!>
+                    <img src="buildtime.png">
+                </p>
+            </li>
+            <br>
+            <li><!-TIP 2-!>
+                <font>
+                    Use the IOS simulator in full screen mode! The simulator takes up enormous amounts of space as it acts as an entire phone, so making it full screen helps to allow the computer to allocate more memory to the application as the other running apps are put into the background. This feature is not enabled by default so the following command must be entered into the Terminal:
+                </font>
+                <br>
+                <p style="text-align:center;">
+                    <img src="terminalinput.png"><!-image-!>
+                </p>
+            </li>
+            <li><!-TIP 3-!>
+                <font>
+                    Take a video of what is on the simulator screen! This is perfect for when you are in the final stages of development as Apple requires a picture or video of your application in action to prove its authenticity and for advertisements. Run the following command in terminal for the screen recording to start:
+                </font>
+                <p style="text-align:center;">
+                    <img src="screenrec.png"><!-image->
+                </p>
+            </li>
+            <li><!-TIP 4-!>
+                <font>
+                    Easily move a large section of code up a line by using <code>CMND+OPTION+{</code><br>
+                    To move a large section of code down a line use <code>CMND+OPTION+}</code>
+                </font>
+            </li>
+            <li><!-TIP 5-!>
+                <font>
+                    Toggle the debug console using <code>CMND+SHIFT+Y</code>
+                </font>
+            </li>
+            <li><!-TIP 6-!>
+                <font>
+                    Show/Hide the assistant editor using <code>CMND+OPTION+RETURN</code>
+                </font>
+            </li>
+            <li><!-TIP 7-!>
+                <font>
+                    In Xcode, a file can be opened in many ways: in the standard editor, in a new or existing assistant editor, in a new or existing tab, or in a new window. Click <code>SHIFT+OPTION+CMND</code> to open the popup and select the area of the screen you want the program to run. 
+                </font>
+                <p style="text-align:center;">
+                    <img src="areaeditor.png" class="center">
+                </p>
+            </li>
+            <li><!-TIP 8-!>
+                <font>
+                    If you ever find yourself typing the same peices of code again and again use <code>CMND+OPTION+CTRL+2</code>. This will activate the autofil for whatever command you are using and save you mounds of time.
+                </font>
+                <p style="text-align:center;">
+                    <img src="commandsnip.png" class="center">
+                </p>
+            </li>
+            <li><!-TIP 9-!>
+                <font>
+                    Finally, the best trick there is with Swift 4 is Automated Testing. With the apps that I have put on the app store many of them were more than 4 thousand lines of code. It would be physically imposible to test the code for every condition every time I added something new to the code! With automated testing the simulator will run all the tests for you can return a <code style="color: green">PASS</code> or <code style="color: red">FAIL</code>. Using this trick saved me hours upon hours of time so that i could further my projects faster.
+                </font>
+                <p style="text-align:center;">
+                    <img src="autotesting.png" class="center">
+                </p>
+            </li>
+        </ol><!-END OF ORDERED LIST FOR GIVING TIPS AND TRICKS-!>
+    </body>
+    
+<!-////////////////////////////////////////////////////////////START OF FOOTER//////////////////////////////////////////-!>
+    
+    <div class="footer" style="padding:10px; text-align:center; background-color: black; color: white;"><!-MAIN FOOTER, MORE INFO/COMMENTS ON HOMEPAGE FILE-!>
+        <div class="footer-content">
+            <a href="AssignmentCodeKeshav.html" title="Return to Homepage">
+                <img src="swiftlogo.jpg" align="center" alt="SWIFT logo" width="50" height="50">
+            </a>
+            <br>
+            <a id="back2Top" title="Back to top" href="#">
+                <img src="returntotop.png" align="center" alt="Return to top" width="100" height="50">
+            </a>
+            <br>
+            <font style="font-size: 15">
+                Webpage designed by: Keshav Gupta, Class: ICS3U, Teacher: Mr.Dhaliwal, Date created: 9/20/2018.
+            </font>
+        </div>
+    </div><!-END OF MAIN FOOTER-!>
+</html><!-END OF HTML-!>

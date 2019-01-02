@@ -1,0 +1,3 @@
+Open assignmentCodeKeshav.html FIRST (This is the HOME PAGE)
+The backups folder is the same thing as the .html files except that the code is in a .txt doc so that it can be easily read
+This webpage is best experienced in full screen
