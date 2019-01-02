@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Computer Systems Assignment</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>Computer Systems Assignment</h1>
+          <h2>Keshav</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="FileManagement.html">File Management</a></li>
+          <li><a href="FileDiagram.html">File Diagram</a></li>
+          <li><a href="CompSys.html">Computer Systems</a></li>
+          <li class="selected"><a href="Terms.html">Terminology</a></li>
+          <li><a href="Sources.html">Sources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+
+      <div id="content">
+        <!-- insert the page content here -->
+          <h2>Terminology</h2>
+          <ul>
+              <li>File Path</li>
+              The path in which the FMS points to the location of a file based on the folders it is in. For example, a document called <strong>notes.docx</strong> inside folders: <br><strong>School->Grade 11->Subject</strong><br> will likely have the file path: <br><code>C:\Users\ProfileName\Documents\School\Grade11\Subject\<strong>notes.docx</strong></code>.<br> The file path is very important to the computer because this is how it transfers what is in its drives into a usable GUI. Without the file path, your document will be inaccessible.
+              <br>
+              <br>
+              <li>Repository</li>
+              The central location that a large number of files are stored. A repository stores a group of files that all have a similar purpose. To use an example, a popular code storing service known as Github uses repositories to store coding projects. On Github, a single repository will store all the files needed for a single project, such as all the code and resources to make an app. From the repo, you can easily group together files with the same purpose and then retrieve them all together by addressing the repository (in the form of a pull request) instead of the file path of every document.
+              <br>
+              <br>
+              <li>RAID</li>
+              RAID stands for Redundant Array of Independent Disks and involves the storage of the same data on multiple hard drives for improved fault tolerance. (In case a file is corrupted you will have an exact copy that was being updated in real-time on a different hard drive so that you don't lose your data!). In my family server that stores all our pictures and files, we have 1TB of independent data and 1TB of RAID data so that we have a safe copy of all our files at all times. The RAID copies are invisible with a period at the beginning of their file name until needed.
+              <br>
+              <br>
+              <li>Double Click</li>
+              The process of clicking your mouse twice in quick succession. Generally, this will open whatever file/folder/document that your mouse is hovering over to reveal its contents. Single clicking will only select the document, sometimes this may cause some confusion because if you click once expecting the file to open it may seem as though the computer is being slow when in fact it is because you need to double-click to perform the operation. Maybe one day, double-clicking will be phased out and we will only need to THINK what we want to do and the computer will know
+              <br>
+              <br>
+              <li>Root</li>
+              Root or <strong>/root</strong> is where the user's computer deems <i>home</i> that stores all the users files. In the sense of a hierarchical type file setup, the root will be the file at the very top of this chain. All other branches must come out of the root. Connecting this to the term <i>file path</i>, the root will be the first folder in the path.
+              <br>
+              <br>
+              <li>Parent Folder</li>
+              The term parent folder is very simple, in terms of the file path, the parent folder is the file <strong>DIRECTLY</strong> above the folder you see. Going back to my <strong>notes.docx</strong> example, the parent folder will be <strong>Subject</strong> because that is the folder directly before the folder the user intends to open:
+              C:\Users\ProfileName\Documents\School\Grade11\<strong>Subject</strong>\notes.docx
+              <br>
+              <br>
+              <center><h3>SCHOOL DRIVES</h3></center>
+              <li><strong>P:</strong></li>
+              Your personal drive, the actual name of the drive is your student number. Saving something to this drive will allow you to access the file from any computer also connected to the OCDSB network and with the file activated. This drive is probably the MOST IMPORTANT drive to the general user in the case of a school computer because it will allow you to use any computer in the school instead of being forced to use only one, which would prove difficult since you may not get the same computer every day and other people may try to mess with your files.
+              <br>
+              <br>
+              <li><strong>S:</strong></li>
+              The drive that all students have access to so that we can share any files we place in the drive with each other. It has the alias <i>studentshare</i>. In all honesty, we don’t use this drive anymore because we already have google drive. Even for special file types, simply zip the file and you will be good to go. I would recommend keeping your distance from this drive because <strong>EVERYONE IN THE SCHOOL</strong> will be able to see your work if you do not delete it!
+              <br>
+              <br>
+              <li><strong>D:</strong></li>
+              The recovery drive. It is a partition on the hard drive used to restore the system in the event of a problem. Although this drive is not invisible to the general user and it is possible to save to it, <strong>YOU SHOULD NEVER DO THIS</strong>! The recovery drive is critical because without it, retrieving the hard drive on your computer will require external drives which will be much slower. If there are foreign files in the D drive, the recovery process may fail and be corrupted.
+              <br>
+              <br>
+              <li><strong>E:</strong></li>
+              The on-device CD reader. When you put a CD on the reader, the contents are stored on the E drive. For some computers, this drive may be a different letter (not just E) because it is easily recognizable as it will usually have the alias <i>DVD/CD-RW DRIVE</i> beside it.
+              <br>
+              <br>
+              <li><strong>X:</strong></li>
+              Otherwise known as the handin-handout drive in the school computers is where all the schools teachers have files for their classes and the students can go into the handout folder to get documents they will need for a project instead of the teacher printing it out, a student cannot delete or change files in the handout folder. The student can also go into the handin folder where they hand in their work, after putting a file into the handin folder it cannot be removed or changed.
+              <br>
+              <br>
+              <center><h3>PERSONAL DRIVES</h3></center>
+              <li><strong>D:</strong></li>
+              My personal computer does not have a recovery drive since it is getting old and I decided to leave it out for better storage because I no longer have any important files on it and if it has a problem with the hard drive I will likely get rid of it instead of trying to recover it and wasting time. Because of this, the D drive is for the on-device CD-Reader, exactly like the E drive described in the section above.
+              <br>
+              <br>
+              <li><strong>A360:</strong></li>
+              The A360 drive is slightly special, it is for the application we use in  FRC to design the robot and this drive is so that we are able to share our files which each other in real-time. Similar to google drive! The A360 drive allows me to store any AutoCAD file, share it with anyone else who has the A360 drive and access the files on the drive from any device.
+              <br>
+              <br>
+              <li><strong>C:</strong></li>
+              Finally, the C drive is the MAIN DRIVE on my computer. It stores all the general files that the computer has such as your documents and applications. This drive is the one that the general user will be saving to 99% of the time.
+          </ul>
+      </div>
+    </div>
+    <div id="footer">
+        Computer Systems Assignment - ICS3U - Keshav Gupta
+    </div>
+  </div>
+</body>
+</html>
